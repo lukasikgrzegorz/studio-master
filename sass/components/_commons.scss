@@ -1,0 +1,36 @@
+body{
+    background-color: $main-background-color;
+    color: $main-color;
+    font-family: "Roboto", "Raleway", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+
+.section{
+    padding: $small-padding auto;
+}
