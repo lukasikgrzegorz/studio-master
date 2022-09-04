@@ -70,6 +70,9 @@
     /*----------*/
 
     /*Mobile menu contact*/
+    &__contact-list{
+        margin-bottom: 64px;
+    }
 
     &__contact-item:not(:last-child){
         margin-bottom: 32px;
@@ -79,6 +82,7 @@
         color: $secondary-color;
         font-size: 24px;
         font-weight: 500;
+        
 
         &--accent{
             color: $accent-color;

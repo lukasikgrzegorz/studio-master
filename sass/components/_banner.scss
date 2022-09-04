@@ -1,0 +1,48 @@
+.banner{
+    max-width: 1600px;
+    width: auto;
+    background-color: $banner-background-color;
+    background-image: linear-gradient(to bottom, $banner-background-color, $banner-background-color),
+            url(../images/banner-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 178px 58px;
+
+
+    &__container{
+        flex-direction: column;
+        gap: $main-gap;
+    }
+
+    &__title{
+        max-width: 365px;
+        margin: auto;
+        color: $white-color;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+    
+    }
+
+    &__button{
+        color: $white-color;
+        background-color: $accent-color;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 700;
+        max-width: 200px;
+        max-height: 50px;
+        letter-spacing: 0.06rem;
+        border: transparent;
+        border-radius: 4px;
+        box-shadow: $banner-button-shadow;
+        cursor: pointer;
+        padding: 10px 41px;
+        margin: auto;
+        
+    }
+}

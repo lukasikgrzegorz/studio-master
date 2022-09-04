@@ -1,0 +1,36 @@
+.features{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $main-gap;
+    }
+
+    &__item{
+       flex-basis: 100%;
+    }
+
+    &__icon{
+        background-color: $features-icon-background;
+        height: 120px;
+        width: 100%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__item-title{
+        font-size: 14px;
+        font-weight: 700px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    &__paragraph{
+        color: $secondary-color;
+        letter-spacing: 0.03rem;
+    }
+}

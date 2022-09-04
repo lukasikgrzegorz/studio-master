@@ -1,0 +1,47 @@
+.clients{
+    &__container{
+        justify-content: center;
+    }
+
+    &__title{
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        line-height: 1.17;
+        margin-bottom: $main-gap;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: $main-gap;
+        
+    }
+
+    &__item{
+        flex-basis: calc((100% - $main-gap) / 2);
+    }
+
+    &__link{
+        color: $icon-fill;
+        display: flex;
+        border: 1px solid;  
+        border-radius: 4px;
+        width: 100%;
+
+        &:hover,
+        &:active{
+            color: $accent-color;
+        }
+
+    }
+
+    &__icon{
+        fill: currentColor;
+        width: 106px;
+        height: 60px;
+        margin: 16px auto;
+    }
+}
+

@@ -5,8 +5,25 @@ $accent-color: #2196F3;
 $white-color: #FFFFFF;
 
 $main-background-color: #FFFFFF;
+$secondary-background-color: #F5F4FA;
 
 $header-border-color: #ECECEC;
 
-/*Padding and margines*/
+$banner-background-color: rgba(47, 48, 58, 0.4);
+
+$features-icon-background: #F5F4FA;
+
+$icon-fill: #AFB1B8;
+
+
+
+/*Shadows*/
+$banner-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$team-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                   0px 1px 1px rgba(0, 0, 0, 0.14),
+                   0px 2px 1px rgba(0, 0, 0, 0.2);
+
+/*Padding,margines and gaps*/
 $small-padding: 60px;
+
+$main-gap: 30px; 
