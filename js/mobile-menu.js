@@ -4,11 +4,18 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    const isMenuOpen = 
+    openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    document.body.classList.add('no-scroll' , !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
+    let a = mobileMenu.classList.contains('is-open');
+    if (a === true) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+    
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
