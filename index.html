@@ -38,10 +38,10 @@
 
         <ul class="menu__navigation-list">
             <li class="menu__navigation-item">
-                <a class="menu__navigation-link" href="">Agencja</a>
+                <a class="menu__navigation-link" href="./index.html">Agencja</a>
             </li>
             <li class="menu__navigation-item">
-                <a class="menu__navigation-link" href="">Portfolio</a>
+                <a class="menu__navigation-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu__navigation-item">
                 <a class="menu__navigation-link" href="">Kontakt</a>
@@ -72,7 +72,7 @@
         <div class="banner section">
             <div class="banner__container container">
                 <h1 class="banner__title">efektywne rozwiązania dla waszego biznesu</h1>
-                <button class="banner__button" type="button">Zamów usługę</button>
+                <button class="banner__button" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </div>
 
@@ -374,6 +374,18 @@
         </div>
     </footer>
 
+    <!---Modal-->
+    <div class="modal is-hidden" data-modal>
+        <div class="modal__window">
+            <button class="modal__close-button" data-modal-close>
+                <svg class="modal__close-icon">
+                    <use href="./images/icons.svg#x"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 
 </body>
