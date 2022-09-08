@@ -9,6 +9,18 @@
        flex-basis: 100%;
     }
 
+    @media screen and (min-width: 768px) {
+        &__item {
+                flex-basis: calc((100% - $main-gap) / 2);
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item {
+                flex-basis: calc((100% - (3 * $main-gap)) / 4);
+            }
+    }
+
     &__icon{
         background-color: $features-icon-background;
         height: 120px;

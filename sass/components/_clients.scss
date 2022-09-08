@@ -1,6 +1,7 @@
 .clients{
     &__container{
         justify-content: center;
+        flex-direction: column;
     }
 
     &__title{
@@ -9,6 +10,7 @@
         letter-spacing: 0.02em;
         line-height: 1.17;
         margin-bottom: $main-gap;
+        text-align: center;
     }
 
     &__list{
@@ -16,11 +18,26 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: $main-gap;
-        
     }
+
+        
 
     &__item{
         flex-basis: calc((100% - $main-gap) / 2);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 11px) {
+        &__item {
+            flex-basis: calc((100% - (2 * $main-gap)) / 3);
+        }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item {
+            flex-basis: calc((100% - (5 * $main-gap)) / 6);
+        }
+        
     }
 
     &__link{

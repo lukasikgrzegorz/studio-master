@@ -28,7 +28,18 @@
         border-radius: 0px 0px 4px 4px;
         box-shadow: $team-item-shadow;
         padding-bottom: 24px;
-        
+    }
+
+    @media screen and (min-width: 768px) {
+        &__item {
+                flex-basis: calc((100% - $main-gap) / 2);
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item {
+                flex-basis: calc((100% - (3 * $main-gap)) / 4);
+            }
     }
 
     &__thumb{

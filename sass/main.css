@@ -47,6 +47,11 @@ a {
   margin: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 15px;
+  }
+}
 /*Header*/
 .header {
   border-bottom: 1px #ECECEC solid;
@@ -54,23 +59,85 @@ a {
   /*----------*/
   /*Logo*/
   /*----------*/
+  /*Nav*/
+  /*----------*/
   /*Menu button*/
   /*----------*/
+  /*Navigation*/
 }
 .header__container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 15px;
+  height: 60px;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 .header__logo {
+  display: flex;
+  align-items: center;
   color: #2196F3;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
+  margin-right: 93px;
 }
 .header__logo--dark {
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 26px;
+  }
+}
+.header__nav {
+  display: flex;
+  height: 100%;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__nav-list {
+    display: flex;
+  }
+}
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.header__nav-link {
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.17;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__nav-link--active {
+  color: #2196F3;
+  font-weight: 500;
+}
+.header__nav-link--active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+.header__nav-link:hover {
+  color: #2196F3;
 }
 .header__menu-button {
   background-color: transparent;
@@ -78,6 +145,11 @@ a {
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
 }
 .header__menu-icon {
   display: block;
@@ -236,6 +308,16 @@ a {
 .features__item {
   flex-basis: 100%;
 }
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .features__icon {
   background-color: #F5F4FA;
   height: 120px;
@@ -287,6 +369,16 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .team__thumb {
   width: 100%;
   margin-bottom: 30px;
@@ -326,6 +418,7 @@ a {
 
 .clients__container {
   justify-content: center;
+  flex-direction: column;
 }
 .clients__title {
   font-size: 28px;
@@ -333,6 +426,7 @@ a {
   letter-spacing: 0.02em;
   line-height: 1.17;
   margin-bottom: 30px;
+  text-align: center;
 }
 .clients__list {
   display: flex;
@@ -342,6 +436,16 @@ a {
 }
 .clients__item {
   flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) and (max-width: 11px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   color: #AFB1B8;
@@ -371,7 +475,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  row-gap: 60px;
+}
+.footer__section {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+  }
 }
 .footer__logo {
   display: block;
@@ -389,6 +508,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    flex-basis: 50%;
+  }
 }
 .footer__contact-list {
   display: flex;
@@ -409,6 +533,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    flex-basis: 50%;
+  }
 }
 .footer__socials-title {
   text-transform: uppercase;
@@ -458,7 +587,20 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 20px;
+  row-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__follow-form {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__follow-form {
+    flex-direction: row;
+    max-width: 570px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
 }
 .footer__follow-input {
   font-size: 16px;
@@ -488,6 +630,11 @@ a {
 .footer__follow-input:focus {
   outline: #2196F3;
   border: 1px #2196F3 solid;
+}
+@media screen and (min-width: 1200px) {
+  .footer__follow-input {
+    width: 358px;
+  }
 }
 .footer__follow-button {
   color: #FFFFFF;
@@ -521,14 +668,26 @@ a {
   position: fixed;
   top: 0px;
   left: 0px;
-  padding: 15px;
+}
+.modal__overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal__window {
   position: relative;
   background-color: #FFFFFF;
   border-radius: 4px;
-  width: 100%;
-  height: 100%;
+  min-width: 320px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .modal__window {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 .modal__close-button {
   position: absolute;
@@ -698,6 +857,11 @@ a {
        column-gap: 8px;
   row-gap: 15px;
 }
+@media screen and (min-width: 768px) {
+  .gallery__sort {
+    justify-content: center;
+  }
+}
 .gallery__sort-button {
   border-radius: 4px;
   border-color: transparent;
@@ -707,6 +871,7 @@ a {
   padding: 6px 28px;
   letter-spacing: 3%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .gallery__sort-button:hover, .gallery__sort-button:active {
   color: #FFFFFF;
@@ -728,6 +893,16 @@ a {
 }
 .gallery__item:hover .gallery__overlay {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .gallery__thumb {
   width: 100%;

@@ -19,7 +19,18 @@
     <!--Header-->
     <header class="header">
         <div class="header__container container">
-            <a class="header__logo" href="./index.html">Web<span class="header__logo--dark">Studio</span></a>
+
+
+            <nav class="header__nav">
+                <a class="header__logo" href="./index.html">Web<span class="header__logo--dark">Studio</span></a>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Studio</a></li>
+                    <li class="header__nav-item"><a href="./portfolio.html"
+                            class="header__nav-link--active">Portfolio</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+
             <button class="header__menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="header__menu-icon">
                     <use href="./images/icons.svg#mobile-menu-icon"></use>
@@ -237,7 +248,7 @@
 
 
     <!--Footer-->
-    <footer class="footer section">
+    <footer class="footer footer__section">
         <div class="footer__container container">
 
             <div class="footer__contact">
@@ -295,14 +306,9 @@
                     <input class="footer__follow-input" type="email" name="username-mail" placeholder="E-mail">
                     <button class="footer__follow-button" type="submit">
                         Zapisz się
-
                         <svg class="footer__follow-icon">
                             <use href="./images/icons.svg#send"></use>
                         </svg>
-
-
-
-
                     </button>
                 </div>
             </form>

@@ -18,8 +18,18 @@
 
     <!--Header-->
     <header class="header">
-        <div class="header__container container">
-            <a class="header__logo" href="./index.html">Web<span class="header__logo--dark">Studio</span></a>
+        <div class="header__container">
+
+
+            <nav class="header__nav">
+                <a class="header__logo" href="./index.html">Web<span class="header__logo--dark">Studio</span></a>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="./index.html" class="header__nav-link--active">Studio</a></li>
+                    <li class="header__nav-item"><a href="./portfolio.html" class="header__nav-link">Portfolio</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+
             <button class="header__menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="header__menu-icon">
                     <use href="./images/icons.svg#mobile-menu-icon"></use>
@@ -27,6 +37,7 @@
             </button>
         </div>
     </header>
+
 
     <!--Mobile Menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -253,55 +264,56 @@
         <div class="clients section">
             <div class="clients__container container">
                 <h2 class="clients__title">Nasi klienci</h2>
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/icons.svg#company-icon-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="clients__list">
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-3"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-4"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-5"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a href="" class="clients__link">
-                        <svg class="clients__icon">
-                            <use href="./images/icons.svg#company-icon-6"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+
         </div>
     </main>
     <!--Footer-->
-    <footer class="footer section">
+    <footer class="footer footer__section">
         <div class="footer__container container">
 
             <div class="footer__contact">
@@ -376,65 +388,67 @@
 
     <!---Modal-->
     <div class="modal is-hidden" data-modal>
-        <div class="modal__window">
-            <button class="modal__close-button" data-modal-close>
-                <svg class="modal__close-icon">
-                    <use href="./images/icons.svg#x"></use>
-                </svg>
-            </button>
-
-            <form class="submit-form">
-
-                <p class="submit-form__title">Zostaw swoje dane w formularzu poniżej</p>
-
-                <div class="submit-form__inside-wrapper">
-
-                    <div class="submit-form__item">
-                        <label class="submit-form__label" for="username">Imię</label>
-                        <input class="submit-form__input" type="text" name="username" id="username">
-                        <svg class="submit-form__icon">
-                            <use href="./images/icons.svg#person-icon"></use>
-                        </svg>
-                    </div>
-
-                    <div class="submit-form__item">
-                        <label class="submit-form__label" for="tel">Telefon</label>
-                        <input class="submit-form__input" type="tel" name="tel" id="tel">
-                        <svg class="submit-form__icon">
-                            <use href="./images/icons.svg#phone-icon"></use>
-                        </svg>
-                    </div>
-
-                    <div class="submit-form__item">
-                        <label class="submit-form__label" for="email">Email</label>
-                        <input class="submit-form__input" type="email" name="email" id="email">
-                        <svg class="submit-form__icon">
-                            <use href="./images/icons.svg#email-form-icon"></use>
-                        </svg>
-                    </div>
-
-                    <div class="submit-form__item">
-                        <label class="submit-form__label" for="comment">Komentarz</label>
-                        <textarea class="submit-form__textarea" name="comment" id="comment"
-                            placeholder="Wprowadź tekst"></textarea>
-                    </div>
-
-                </div>
-
-                <div class="submit-form__check-item">
-                    <input class="submit-form__checkbox" type="checkbox" id="agreement">
-                    <svg class="submit-form__checkbox-icon">
-                        <use href="./images/icons.svg#check"></use>
+        <div class="modal__overlay">
+            <div class="modal__window">
+                <button class="modal__close-button" data-modal-close>
+                    <svg class="modal__close-icon">
+                        <use href="./images/icons.svg#x"></use>
                     </svg>
-                    <span class="submit-form__agremment-text">
-                        Oświadczam iż akceptuję <a href="" class="submit-form__agremment_link">Regulamin</a> i
-                        <a href="" class="submit-form__agremment_link">Politykę Prywatności.</a>
-                    </span>
-                </div>
+                </button>
+
+                <form class="submit-form">
+
+                    <p class="submit-form__title">Zostaw swoje dane w formularzu poniżej</p>
+
+                    <div class="submit-form__inside-wrapper">
+
+                        <div class="submit-form__item">
+                            <label class="submit-form__label" for="username">Imię</label>
+                            <input class="submit-form__input" type="text" name="username" id="username">
+                            <svg class="submit-form__icon">
+                                <use href="./images/icons.svg#person-icon"></use>
+                            </svg>
+                        </div>
+
+                        <div class="submit-form__item">
+                            <label class="submit-form__label" for="tel">Telefon</label>
+                            <input class="submit-form__input" type="tel" name="tel" id="tel">
+                            <svg class="submit-form__icon">
+                                <use href="./images/icons.svg#phone-icon"></use>
+                            </svg>
+                        </div>
+
+                        <div class="submit-form__item">
+                            <label class="submit-form__label" for="email">Email</label>
+                            <input class="submit-form__input" type="email" name="email" id="email">
+                            <svg class="submit-form__icon">
+                                <use href="./images/icons.svg#email-form-icon"></use>
+                            </svg>
+                        </div>
+
+                        <div class="submit-form__item">
+                            <label class="submit-form__label" for="comment">Komentarz</label>
+                            <textarea class="submit-form__textarea" name="comment" id="comment"
+                                placeholder="Wprowadź tekst"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="submit-form__check-item">
+                        <input class="submit-form__checkbox" type="checkbox" id="agreement">
+                        <svg class="submit-form__checkbox-icon">
+                            <use href="./images/icons.svg#check"></use>
+                        </svg>
+                        <span class="submit-form__agremment-text">
+                            Oświadczam iż akceptuję <a href="" class="submit-form__agremment_link">Regulamin</a> i
+                            <a href="" class="submit-form__agremment_link">Politykę Prywatności.</a>
+                        </span>
+                    </div>
 
 
-                <button class="submit-form__button" type="submit">Wyślij</button>
-            </form>
+                    <button class="submit-form__button" type="submit">Wyślij</button>
+                </form>
+            </div>
         </div>
     </div>
 

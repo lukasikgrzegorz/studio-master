@@ -12,6 +12,12 @@
         column-gap: 8px;
         row-gap: 15px;
     }
+
+    @media screen and (min-width: 768px) {
+        &__sort{
+            justify-content: center;
+        }
+    }
     
     &__sort-button{
         border-radius: 4px;
@@ -22,6 +28,7 @@
         padding: 6px 28px;
         letter-spacing: 3%;
         transition: background-color $main-animation;
+        cursor: pointer;
 
         &:hover,
         &:active{
@@ -50,6 +57,18 @@
         &:hover .gallery__overlay{
             transform: translateY(0);
             
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__item{
+            flex-basis: calc((100% - $main-gap) / 2);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item{
+            flex-basis: calc((100% - 2 * $main-gap) / 3);
         }
     }
 

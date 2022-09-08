@@ -5,7 +5,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        row-gap: 60px;
+    }
+
+    &__section{
+        padding: $small-padding 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__container {
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;   
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__container {
+                flex-wrap: nowrap;   
+            }
     }
 
     &__logo{
@@ -28,6 +46,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__contact {
+                flex-basis: 50%
+            }
     }
 
     &__contact-list{
@@ -54,6 +78,12 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__socials {
+                flex-basis: 50%
+            }
     }
 
     &__socials-title{
@@ -113,7 +143,21 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 20px;
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__follow-form{
+            max-width: 450px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__follow-form{
+            flex-direction: row;
+            max-width: 570px;
+            column-gap: 12px;
+        }
     }
 
 
@@ -138,6 +182,12 @@
             border: 1px $accent-color solid;
         }
       
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__follow-input{
+            width: 358px;
+        }
     }
 
     &__follow-button{
