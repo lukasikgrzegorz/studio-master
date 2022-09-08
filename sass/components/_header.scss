@@ -40,6 +40,7 @@
         width: 24px;
         height: 24px;
         fill: currentColor;
+        transition: fill $main-animation;
 
         &:hover{
             fill: $accent-color;

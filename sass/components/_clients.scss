@@ -29,6 +29,7 @@
         border: 1px solid;  
         border-radius: 4px;
         width: 100%;
+        transition: color $main-animation;
 
         &:hover,
         &:active{

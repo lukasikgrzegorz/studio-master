@@ -382,6 +382,59 @@
                     <use href="./images/icons.svg#x"></use>
                 </svg>
             </button>
+
+            <form class="submit-form">
+
+                <p class="submit-form__title">Zostaw swoje dane w formularzu poniżej</p>
+
+                <div class="submit-form__inside-wrapper">
+
+                    <div class="submit-form__item">
+                        <label class="submit-form__label" for="username">Imię</label>
+                        <input class="submit-form__input" type="text" name="username" id="username">
+                        <svg class="submit-form__icon">
+                            <use href="./images/icons.svg#person-icon"></use>
+                        </svg>
+                    </div>
+
+                    <div class="submit-form__item">
+                        <label class="submit-form__label" for="tel">Telefon</label>
+                        <input class="submit-form__input" type="tel" name="tel" id="tel">
+                        <svg class="submit-form__icon">
+                            <use href="./images/icons.svg#phone-icon"></use>
+                        </svg>
+                    </div>
+
+                    <div class="submit-form__item">
+                        <label class="submit-form__label" for="email">Email</label>
+                        <input class="submit-form__input" type="email" name="email" id="email">
+                        <svg class="submit-form__icon">
+                            <use href="./images/icons.svg#email-form-icon"></use>
+                        </svg>
+                    </div>
+
+                    <div class="submit-form__item">
+                        <label class="submit-form__label" for="comment">Komentarz</label>
+                        <textarea class="submit-form__textarea" name="comment" id="comment"
+                            placeholder="Wprowadź tekst"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="submit-form__check-item">
+                    <input class="submit-form__checkbox" type="checkbox" id="agreement">
+                    <svg class="submit-form__checkbox-icon">
+                        <use href="./images/icons.svg#check"></use>
+                    </svg>
+                    <span class="submit-form__agremment-text">
+                        Oświadczam iż akceptuję <a href="" class="submit-form__agremment_link">Regulamin</a> i
+                        <a href="" class="submit-form__agremment_link">Politykę Prywatności.</a>
+                    </span>
+                </div>
+
+
+                <button class="submit-form__button" type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
 

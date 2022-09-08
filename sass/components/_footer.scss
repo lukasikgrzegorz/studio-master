@@ -79,6 +79,7 @@
         height: 44px;
         background-color: $footer-social-icon-backgound-color;
         border-radius: 50%;
+        transition: background-color $main-animation;
 
         &:active,
         &:hover{

@@ -61,6 +61,7 @@
        font-size: 40px;
        font-weight: 500;
        letter-spacing: 0.02;
+       transition: color $main-animation;
 
        &:hover{
         color: $accent-color;

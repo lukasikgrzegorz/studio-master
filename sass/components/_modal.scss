@@ -5,7 +5,8 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    padding: 93px 15px;
+    padding: 15px;
+
   
 
     &__window{
@@ -25,6 +26,7 @@
         border-radius: 50%;
         width: 30px;
         height: 30px;
+        transition: color $main-animation;
 
         &:hover{
             color: $accent-color;
