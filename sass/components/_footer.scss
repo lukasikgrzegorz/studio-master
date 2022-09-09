@@ -70,6 +70,11 @@
     &__contact-link{
         color: $footer-contact-link-color;
         letter-spacing: 0.03em;
+        transition: color $main-animation;
+
+        &:hover{
+            color: $accent-color;
+        }
     }
 
     /*Socials*/
