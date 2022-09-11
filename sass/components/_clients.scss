@@ -13,6 +13,13 @@
         text-align: center;
     }
 
+    @media screen and (min-width: 1200px) {
+        &__title{
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
     &__list{
         display: flex;
         justify-content: center;

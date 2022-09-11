@@ -15,6 +15,13 @@
         margin-bottom: $main-gap;
     }
 
+    @media screen and (min-width: 1200px) {
+        &__title{
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
     &__list{
         display: flex;
         flex-wrap: wrap;
@@ -66,6 +73,13 @@
     }
 
 
+    &__socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
     &__socials-icon{
         display:inline-block;
         fill: $icon-fill;

@@ -340,12 +340,20 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .banner__button {
   color: #FFFFFF;
   background-color: #2196F3;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.87;
   max-width: 200px;
   max-height: 50px;
   letter-spacing: 0.06rem;
@@ -399,6 +407,66 @@ a {
   line-height: 1.71;
 }
 
+.services__section {
+  padding: 0 15px 60px;
+  margin: auto;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .services__section {
+    display: block;
+  }
+}
+.services__container {
+  flex-direction: column;
+}
+.services__title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.services__item {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+.services__thumb {
+  width: 100%;
+  min-height: auto;
+}
+.services__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services__paragraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .team {
   background-color: #F5F4FA;
 }
@@ -413,6 +481,12 @@ a {
   line-height: 1.17;
   margin: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   display: flex;
@@ -457,6 +531,12 @@ a {
   color: #757575;
   margin-bottom: 16px;
 }
+.team__socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
 .team__socials-icon {
   display: inline-block;
   fill: #AFB1B8;
@@ -485,6 +565,12 @@ a {
   line-height: 1.17;
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
   display: flex;
@@ -579,11 +665,13 @@ a {
   gap: 8px;
 }
 .footer__contact-address {
+  line-height: 1.71;
   font-style: normal;
   color: #FFFFFF;
   letter-spacing: 0.03em;
 }
 .footer__contact-link {
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

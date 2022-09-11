@@ -25,7 +25,14 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
-    
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__title{
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__button{
@@ -34,6 +41,7 @@
         font-family: "Roboto";
         font-size: 16px;
         font-weight: 700;
+        line-height: 1.87;
         max-width: 200px;
         max-height: 50px;
         letter-spacing: 0.06rem;

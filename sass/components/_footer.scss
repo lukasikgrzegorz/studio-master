@@ -62,12 +62,14 @@
     }
 
     &__contact-address{
+        line-height: 1.71;
         font-style: normal;
         color: $white-color;
         letter-spacing: 0.03em;
     }
 
     &__contact-link{
+        line-height: 1.71;
         color: $footer-contact-link-color;
         letter-spacing: 0.03em;
         transition: color $main-animation;
