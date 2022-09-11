@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
-    <title>Studio</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -82,14 +82,14 @@
         <div class="gallery section">
             <div class="gallery__container container">
                 <div class="gallery__sort">
-                    <button class="gallery__sort-button">Wszystkie</button>
-                    <button class="gallery__sort-button">Strony</button>
-                    <button class="gallery__sort-button">Aplikacje</button>
-                    <button class="gallery__sort-button">Dizaj</button>
-                    <button class="gallery__sort-button">Marketing</button>
+                    <button class="gallery__sort-button" all-btn>Wszystkie</button>
+                    <button class="gallery__sort-button" website-btn>Strony</button>
+                    <button class="gallery__sort-button" app-btn>Aplikacje</button>
+                    <button class="gallery__sort-button" design-btn>Dizaj</button>
+                    <button class="gallery__sort-button" marketing-btn>Marketing</button>
                 </div>
                 <ul class="gallery__grid">
-                    <li class="gallery__item">
+                    <li class="gallery__item" item website>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-1.jpg"
@@ -106,7 +106,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item design>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-2.jpg"
@@ -123,7 +123,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item app>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-3.jpg" alt="Logo firmy z rybą">
@@ -139,7 +139,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item marketing>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-4.jpg"
@@ -156,7 +156,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item app>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-5.jpg" alt="Dwie paczki">
@@ -172,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item website>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-6.jpg"
@@ -189,7 +189,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item design>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-7.jpg"
@@ -206,7 +206,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item marketing>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-8.jpg"
@@ -223,7 +223,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__item">
+                    <li class="gallery__item" item app>
                         <a href="" class="gellery__link">
                             <div class="gallery__thumb">
                                 <img class="gallery__photo" src="./images/portfolio-9.jpg" alt="Laptop">
@@ -317,6 +317,7 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/sorting.js"></script>
 
 </body>
 
